@@ -53,6 +53,7 @@
           <li><a href="#jqueryappend">JQuery - Elemente hinzufügen</a></li>
             <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
             <li><a href="#serialisierung">Serialisierung</a></li>
+            <li><a href="#localstorage">LocalStorage</a></li>
 
         </ul>
       </nav>
@@ -151,6 +152,10 @@
 <script src="https://gist.github.com/AndreasLochwitz/f9756a056907f16fdd87.js"></script>
 <p>Um aus einem serialisierten JSON-String das Objekt wiederherzustellen gibt es die Funktion <pre>JSON.parse</pre></p>
 <script src="https://gist.github.com/AndreasLochwitz/549cece6ec91080170c3.js"></script>
+
+<h4 id="localstorage">Daten speichern</h4>
+<p>Wenn man eine Webseite neu lädt gehen alle getätigten Eingaben verloren. Man kann mit dem <pre>localStorage</pre> Daten zwischenspeichern (bis ca. 5 MB) die man später wieder auslesen kann. Hinweis: Wenn man komplexere Daten speichern will muss man diese zuvor mittels <pre>JSON.stringify</pre> serialisieren.</p>
+<script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
 
       </section>
 
