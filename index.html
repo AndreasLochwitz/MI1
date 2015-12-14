@@ -9,12 +9,12 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
   <style media="screen">
-  nav {
-    position: fixed;
-    left: 20px;
-    top: 10px;
-    width: 250px;
-  }
+    nav {
+      position: fixed;
+      left: 20px;
+      top: 10px;
+      width: 250px;
+    }
   </style>
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -66,6 +66,7 @@
           <li><a href="#leafletmarker">Marker zu Leaflet hinzufügen</a></li>
           <li><a href="#leafletmarkerevents">Events von Leaflet-Marker</a></li>
           <li><a href="#leafletdistance">Entfernung berechnen</a></li>
+          <li><a href="#leafletdistancesort">Orte nach Entfernung sortieren</a></li>
 
         </ul>
       </nav>
@@ -198,19 +199,31 @@
         <script src="https://gist.github.com/AndreasLochwitz/558e51eac384c158d6c8.js"></script>
 
         <h4 id="leafletmarker">Marker zu Leaflet hinzufügen</h4>
-        <p>Mit <pre>L.marker</pre> kann ein neuer Marker erstellt und der Karte hinzugefügt werden:</p>
+        <p>Mit
+          <pre>L.marker</pre> kann ein neuer Marker erstellt und der Karte hinzugefügt werden:</p>
         <script src="https://gist.github.com/AndreasLochwitz/d8364cff4cdc135817c4.js"></script>
 
         <h4 id="leafletmarkerevents">Events von Leaflet-Marker</h4>
         <p>
-          Mit der Methode <pre>.on</pre> kann man für Marker Events registrieren. Beispiel für die Ausgabe einer Meldung wenn man auf einen Marker geklickt hat:
+          Mit der Methode
+          <pre>.on</pre> kann man für Marker Events registrieren. Beispiel für die Ausgabe einer Meldung wenn man auf einen Marker geklickt hat:
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/a4dda89454cfddaa0af2.js"></script>
         <p>Die möglichen Events für Marker sind <a href="http://leafletjs.com/reference.html#marker-click" target="_blank">hier</a> beschrieben.</p>
 
         <h4 id="leafletdistance">Entfernung berechnen</h4>
-        <p>Die Leaflet-Bibliothek bietet für Koordinaten ein Objekt namens <pre><a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLng</a></pre> welches eine Funktion mit dem Namen <pre>distanceTo</pre> bereitstellt. Darüber kann man Entfernung in Meterns zwischen zwei Punkten ausrechnen:</p>
+        <p>Die Leaflet-Bibliothek bietet für Koordinaten ein Objekt namens
+          <pre><a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLng</a></pre> welches eine Funktion mit dem Namen
+          <pre>distanceTo</pre> bereitstellt. Darüber kann man Entfernung in Meterns zwischen zwei Punkten ausrechnen:</p>
         <script src="https://gist.github.com/AndreasLochwitz/371e47534d117212f350.js"></script>
+
+        <h4 id="leafletdistancesort">Orte nach Entfernung sortieren</h4>
+        <p>Gegeben sei folgende JSON-Datei mit Orten und Geokoordinaten:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/54e1e8056ca3d6c81d81.js"></script>
+        <p>
+          Um diese Datei einzulesen, zu sortieren nach steigender Entfernung und auf der Konsole auszugeben kann man folgendes Programm verwenden:
+        </p>
+        <script src="https://gist.github.com/AndreasLochwitz/dedf7d29a17295619384.js"></script>
 
       </section>
 
