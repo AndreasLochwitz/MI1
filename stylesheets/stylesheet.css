@@ -342,6 +342,15 @@ footer a:hover {
 /* #Media Queries
 ================================================== */
 
+@media only screen and (min-width: 1200px) {
+	nav {
+		position: fixed;
+		left: 20px;
+		top: 10px;
+		width: 250px;
+	}
+}
+
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) { }
 
