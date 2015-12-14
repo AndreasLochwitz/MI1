@@ -54,6 +54,9 @@
           <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
           <li><a href="#serialisierung">Serialisierung</a></li>
           <li><a href="#localstorage">LocalStorage</a></li>
+          <li><a href="#leaflet">Karten mit Leaflet</a></li>
+          <li><a href="#leafletmarker">Marker zu Leaflet hinzufügen</a></li>
+          <li><a href="#leafletmarkerevents">Events von Leaflet-Marker</a></li>
 
         </ul>
       </nav>
@@ -180,6 +183,21 @@
           <pre>JSON.stringify</pre> serialisieren.</p>
         <script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
         <p>Weitere Informationen zum localStorage gibt es <a href="http://diveintohtml5.info/storage.html" target="_blank">hier</a></p>
+
+        <h4 id="leaflet">Karten mit Leaflet</h4>
+        <p>Mit der Bibliothek <a href="http://leafletjs.com/" target="_blank">Leaflet</a> kann man auf einfache Weise eine Karte in eine Webseite einbauen.</p>
+        <script src="https://gist.github.com/AndreasLochwitz/558e51eac384c158d6c8.js"></script>
+
+        <h4 id="leafletmarker">Marker zu Leaflet hinzufügen</h4>
+        <p>Mit <pre>L.marker</pre> kann ein neuer Marker erstellt und der Karte hinzugefügt werden:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/d8364cff4cdc135817c4.js"></script>
+
+        <h4 id="leafletmarkerevents">Events von Leaflet-Marker</h4>
+        <p>
+          Mit der Methode <pre>.on</pre> kann man für Marker Events registrieren. Beispiel für die Ausgabe einer Meldung wenn man auf einen Marker geklickt hat:
+        </p>
+        <script src="https://gist.github.com/AndreasLochwitz/a4dda89454cfddaa0af2.js"></script>
+
 
       </section>
 
