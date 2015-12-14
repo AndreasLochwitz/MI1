@@ -23,7 +23,7 @@
         <h2>Notizen</h2>
       </header>
 
-<!--
+      <!--
       <section id="downloads" class="clearfix">
         <a href="https://github.com/AndreasLochwitz/MI1/zipball/master" id="download-zip" class="button">
           <span>Download .zip</span>
@@ -51,9 +51,9 @@
           <li><a href="#zufall">Zufallszahlen</a></li>
           <li><a href="#jquery">JQuery</a></li>
           <li><a href="#jqueryappend">JQuery - Elemente hinzufügen</a></li>
-            <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
-            <li><a href="#serialisierung">Serialisierung</a></li>
-            <li><a href="#localstorage">LocalStorage</a></li>
+          <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
+          <li><a href="#serialisierung">Serialisierung</a></li>
+          <li><a href="#localstorage">LocalStorage</a></li>
 
         </ul>
       </nav>
@@ -65,30 +65,39 @@
         <h4 id="kommentare">
           Kommentare
         </h4>
-        <p>Kommentare können in JavaScript mit <pre>//</pre> bzw. <pre>/* ... */</pre> gebildet werden.</p>
+        <p>Kommentare können in JavaScript mit
+          <pre>//</pre> bzw.
+          <pre>/* ... */</pre> gebildet werden.</p>
         <script src="https://gist.github.com/AndreasLochwitz/8045347.js"></script>
         <script src="https://gist.github.com/AndreasLochwitz/8045377.js"></script>
 
         <h4 id="variablen">Variablen</h4>
-        <p>Variablen werden mit dem Schlüsselwort <pre>var</pre> eingeleitet. Im Gegensatz zu Java bezieht sich die Sichtbarkeit von Variablen nicht auf den aktuellen Block sondern auf die aktuelle Funktion. Werden Funktionen in einander verschachtelt so können die inneren Funktionen auf die Variablen der äußeren zugreifen.</p>
+        <p>Variablen werden mit dem Schlüsselwort
+          <pre>var</pre> eingeleitet. Im Gegensatz zu Java bezieht sich die Sichtbarkeit von Variablen nicht auf den aktuellen Block sondern auf die aktuelle Funktion. Werden Funktionen in einander verschachtelt so können die inneren Funktionen auf die Variablen
+          der äußeren zugreifen.</p>
 
         <script src="https://gist.github.com/AndreasLochwitz/8045571.js"></script>
         <script src="https://gist.github.com/AndreasLochwitz/8045630.js"></script>
 
         <h4 id="konsole">Ausgaben auf der Konsole</h4>
-        <p>Mit dem Befehl <pre>console.log</pre> kann man sich Variableninhalte und Texte auf der JavaScript Konsole des Browsers ausgeben lassen.
+        <p>Mit dem Befehl
+          <pre>console.log</pre> kann man sich Variableninhalte und Texte auf der JavaScript Konsole des Browsers ausgeben lassen.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8045735.js"></script>
 
         <h4 id="schleifen">Schleifen</h4>
-        <p>Mit dem Schlüsselwort <pre>for</pre> kann man wie in Java eine Schleife erstellen:</p>
+        <p>Mit dem Schlüsselwort
+          <pre>for</pre> kann man wie in Java eine Schleife erstellen:</p>
         <script src="https://gist.github.com/AndreasLochwitz/8dfced75640b2e722ac3.js"></script>
-        <p>Eine <pre>while</pre>Schleife gibt es auch:</p>
+        <p>Eine
+          <pre>while</pre>Schleife gibt es auch:</p>
         <script src="https://gist.github.com/AndreasLochwitz/1da82c89a521ac0c2f79.js"></script>
 
         <h4 id="funktionen">Funktionen definieren</h4>
         <p>
-          Mit dem Schlüsselwort <pre>function</pre> kann man Funktionen in JavaScript definieren. In Klammern kann man Parameter angeben. Im Gegensatz zu Java werden keine Typen angegeben. Mit <pre>return</pre> kann ein Rückgabewert zurückgegeben werden.
+          Mit dem Schlüsselwort
+          <pre>function</pre> kann man Funktionen in JavaScript definieren. In Klammern kann man Parameter angeben. Im Gegensatz zu Java werden keine Typen angegeben. Mit
+          <pre>return</pre> kann ein Rückgabewert zurückgegeben werden.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8045685.js"></script>
 
@@ -106,57 +115,71 @@
 
         <h4 id="delay">Verzögerte Ausführung</h4>
         <p>
-          Mit der Funktion <pre>setTimeout</pre> (einmalige Ausführung) bzw. <pre>setInterval</pre> (wiederholte Ausführung) kann man Funktionen verzögert (und wiederholt) ausführen lassen. Als erster Parameter wird entweder eine anonyme Funktion übergeben oder der Name einer definierten Funktion und dann noch die Zeit in Millisekunden, wie lange gewartet werden soll.
+          Mit der Funktion
+          <pre>setTimeout</pre> (einmalige Ausführung) bzw.
+          <pre>setInterval</pre> (wiederholte Ausführung) kann man Funktionen verzögert (und wiederholt) ausführen lassen. Als erster Parameter wird entweder eine anonyme Funktion übergeben oder der Name einer definierten Funktion und dann noch die Zeit in
+          Millisekunden, wie lange gewartet werden soll.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8046600.js"></script>
         <script src="https://gist.github.com/AndreasLochwitz/8051571.js"></script>
-        <p>Mit <pre>setInterval</pre> kann man auch einen kleinen Countdown basteln:</p>
+        <p>Mit
+          <pre>setInterval</pre> kann man auch einen kleinen Countdown basteln:</p>
         <script src="https://gist.github.com/AndreasLochwitz/8051603.js"></script>
 
         <h4 id="zufall">Zufallszahlen</h4>
         <p>
-          Mit Hilfe der Methode <pre>Math.random</pre> kann man Zufallszahlen generieren.
+          Mit Hilfe der Methode
+          <pre>Math.random</pre> kann man Zufallszahlen generieren.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8126006.js"></script>
         <script src="https://gist.github.com/AndreasLochwitz/8126025.js"></script>
 
         <h4 id="jquery">jQuery</h4>
         <p>
-          Mit Hilfe der Bibliothek <a href="http://jquery.com" target="_blank">jQuery</a> kann man relativ einfach ohne viel Code viel erreichen. Die API ist <a href="http://api.jquery.com/" target="_blank">hier</a> beschrieben.<br /><br />
-          Nachdem man die JavaScript-Bibliothek mittels einem Script-Tag in den Header eingebunden hat kann man über <pre>$</pre> auf die Funktionalität von jQuery zugreifen. Das Vorgehen ist das man zuerst mittels eines <a  href="http://api.jquery.com/category/selectors/" target="_blank">Selektors</a> Elemente auf der Seite auswählt und diese dann verändert.
+          Mit Hilfe der Bibliothek <a href="http://jquery.com" target="_blank">jQuery</a> kann man relativ einfach ohne viel Code viel erreichen. Die API ist <a href="http://api.jquery.com/" target="_blank">hier</a> beschrieben.
+          <br />
+          <br /> Nachdem man die JavaScript-Bibliothek mittels einem Script-Tag in den Header eingebunden hat kann man über
+          <pre>$</pre> auf die Funktionalität von jQuery zugreifen. Das Vorgehen ist das man zuerst mittels eines <a href="http://api.jquery.com/category/selectors/" target="_blank">Selektors</a> Elemente auf der Seite auswählt und diese dann verändert.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/b1ab97d64688a015be60.js"></script>
 
         <h4 id="jqueryappend">jQuery - HTML hinzfügen</h4>
         <p>
-          Mit Hilfe der jQuery-Funktion <pre><a href="http://api.jquery.com/append/" target="_blank">append</a></pre> kann man per JavaScript einfach neue HTML-Elemente einer Webseite hinzufügen.
+          Mit Hilfe der jQuery-Funktion
+          <pre><a href="http://api.jquery.com/append/" target="_blank">append</a></pre> kann man per JavaScript einfach neue HTML-Elemente einer Webseite hinzufügen.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/a9e4a27b64973cd3a551.js"></script>
 
-<h4 id="json">JSON-Datei laden und hinzufügen</h4>
-<p>Das <a href="http://json.org/json-de.html" target="_blank">json</a>-Format kann verwendet werden um Daten bei einer Webseite einzulesen. In jQuery gibt es eine Funktion namens <pre>$.getJSON</pre> um eine json-Datei einzulesen. (Hinweis: Die funktioniert nur wenn die Webseite über einen Server ausgeliefert wird. Wenn man die Seite direkt über den Finder/Explorer öffnet geht es auch Sicherheitsgründen nicht)</p>
+        <h4 id="json">JSON-Datei laden und hinzufügen</h4>
+        <p>Das <a href="http://json.org/json-de.html" target="_blank">json</a>-Format kann verwendet werden um Daten bei einer Webseite einzulesen. In jQuery gibt es eine Funktion namens
+          <pre>$.getJSON</pre> um eine json-Datei einzulesen. (Hinweis: Die funktioniert nur wenn die Webseite über einen Server ausgeliefert wird. Wenn man die Seite direkt über den Finder/Explorer öffnet geht es auch Sicherheitsgründen nicht)</p>
 
-<p>Es sei folgende JSON-Datei gegeben (von einem einfachen Chat):</p>
-<script src="https://gist.github.com/AndreasLochwitz/d58f4f00067a6dc6fd66.js"></script>
+        <p>Es sei folgende JSON-Datei gegeben (von einem einfachen Chat):</p>
+        <script src="https://gist.github.com/AndreasLochwitz/d58f4f00067a6dc6fd66.js"></script>
 
-<p>Mit folgendem Code kann die Datei geladen werden:</p>
-<script src="https://gist.github.com/AndreasLochwitz/b58b27a320d3844afc53.js"></script>
+        <p>Mit folgendem Code kann die Datei geladen werden:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/b58b27a320d3844afc53.js"></script>
 
-<p>Ein Beispiel wo der Inhalt auf der Seite angezeigt wird:</p>
-<script src="https://gist.github.com/AndreasLochwitz/fdaba03a803cb12d7b2e.js"></script>
+        <p>Ein Beispiel wo der Inhalt auf der Seite angezeigt wird:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/fdaba03a803cb12d7b2e.js"></script>
 
-<h4 id="serialisierung">Serialisierung</h4>
-<p>Gegeben sei folgendes Objekt:</p>
-<script src="https://gist.github.com/AndreasLochwitz/60ff217bc1432d374fe7.js"></script>
-<p>Um dieses zu serialisieren als JSON-String kann die Funktion <pre>JSON.stringify</pre> verwendet werden:</p>
-<script src="https://gist.github.com/AndreasLochwitz/f9756a056907f16fdd87.js"></script>
-<p>Um aus einem serialisierten JSON-String das Objekt wiederherzustellen gibt es die Funktion <pre>JSON.parse</pre></p>
-<script src="https://gist.github.com/AndreasLochwitz/549cece6ec91080170c3.js"></script>
+        <h4 id="serialisierung">Serialisierung</h4>
+        <p>Gegeben sei folgendes Objekt:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/60ff217bc1432d374fe7.js"></script>
+        <p>Um dieses zu serialisieren als JSON-String kann die Funktion
+          <pre>JSON.stringify</pre> verwendet werden:</p>
+        <script src="https://gist.github.com/AndreasLochwitz/f9756a056907f16fdd87.js"></script>
+        <p>Um aus einem serialisierten JSON-String das Objekt wiederherzustellen gibt es die Funktion
+          <pre>JSON.parse</pre>
+        </p>
+        <script src="https://gist.github.com/AndreasLochwitz/549cece6ec91080170c3.js"></script>
 
-<h4 id="localstorage">Daten speichern</h4>
-<p>Wenn man eine Webseite neu lädt gehen alle getätigten Eingaben verloren. Man kann mit dem <pre>localStorage</pre> Daten zwischenspeichern (bis ca. 5 MB) die man später wieder auslesen kann. Hinweis: Wenn man komplexere Daten speichern will muss man diese zuvor mittels <pre>JSON.stringify</pre> serialisieren.</p>
-<script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
-<p>Weitere Informationen zum localStorage gibt es <a href="http://diveintohtml5.info/storage.html" target="_blank">hier</a></p>
+        <h4 id="localstorage">Daten speichern</h4>
+        <p>Wenn man eine Webseite neu lädt gehen alle getätigten Eingaben verloren. Man kann mit dem
+          <pre>localStorage</pre> Daten zwischenspeichern (bis ca. 5 MB) die man später wieder auslesen kann. Hinweis: Wenn man komplexere Daten speichern will muss man diese zuvor mittels
+          <pre>JSON.stringify</pre> serialisieren.</p>
+        <script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
+        <p>Weitere Informationen zum localStorage gibt es <a href="http://diveintohtml5.info/storage.html" target="_blank">hier</a></p>
 
       </section>
 
