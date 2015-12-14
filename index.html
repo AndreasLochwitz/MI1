@@ -51,6 +51,7 @@
           <li><a href="#zufall">Zufallszahlen</a></li>
           <li><a href="#jquery">JQuery</a></li>
           <li><a href="#jqueryappend">JQuery - Elemente hinzufügen</a></li>
+            <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
 
         </ul>
       </nav>
@@ -129,6 +130,19 @@
           Mit Hilfe der jQuery-Funktion <pre><a href="http://api.jquery.com/append/" target="_blank">append</a></pre> kann man per JavaScript einfach neue HTML-Elemente einer Webseite hinzufügen.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/a9e4a27b64973cd3a551.js"></script>
+
+<h4 id="json">JSON-Datei laden und hinzufügen</h4>
+<p>Das <a href="http://json.org/json-de.html" target="_blank">json</a>-Format kann verwendet werden um Daten bei einer Webseite einzulesen. In jQuery gibt es eine Funktion namens <pre>$.getJSON</pre> um eine json-Datei einzulesen. (Hinweis: Die funktioniert nur wenn die Webseite über einen Server ausgeliefert wird. Wenn man die Seite direkt über den Finder/Explorer öffnet geht es auch Sicherheitsgründen nicht)</p>
+
+<p>Es sei folgende JSON-Datei gegeben (von einem einfachen Chat):</p>
+<script src="https://gist.github.com/AndreasLochwitz/d58f4f00067a6dc6fd66.js"></script>
+
+<p>Mit folgendem Code kann die Datei geladen werden:</p>
+<script src="https://gist.github.com/AndreasLochwitz/b58b27a320d3844afc53.js"></script>
+
+<p>Ein Beispiel wo der Inhalt auf der Seite angezeigt wird:</p>
+<script src="https://gist.github.com/AndreasLochwitz/fdaba03a803cb12d7b2e.js"></script>
+
 
       </section>
 
