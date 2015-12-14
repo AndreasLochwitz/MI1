@@ -44,11 +44,11 @@
           <li><a href="#variablen">Variablen</a></li>
           <li><a href="#konsole">Ausgaben auf der Konsole</a></li>
           <li><a href="#schleifen">Schleifen</a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#funktionen">Funktionen</a></li>
+          <li><a href="#arrays">Arrays</a></li>
+          <li><a href="#hasharrays">HashArrays</a></li>
+          <li><a href="#delay">Verzögerte Ausführung</a></li>
+          <li><a href="#zufall">Zufallszahlen</a></li>
           <li><a href="#"></a></li>
 
         </ul>
@@ -82,25 +82,25 @@
         <p>Eine <pre>while</pre>Schleife gibt es auch:</p>
         <script src="https://gist.github.com/AndreasLochwitz/1da82c89a521ac0c2f79.js"></script>
 
-        <h4>Funktionen definieren</h4>
+        <h4 id="funktionen">Funktionen definieren</h4>
         <p>
           Mit dem Schlüsselwort <pre>function</pre> kann man Funktionen in JavaScript definieren. In Klammern kann man Parameter angeben. Im Gegensatz zu Java werden keine Typen angegeben. Mit <pre>return</pre> kann ein Rückgabewert zurückgegeben werden.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8045685.js"></script>
 
-        <h4>Arrays</h4>
+        <h4 id="arrays">Arrays</h4>
         <p>
           Mit den eckigen Klammern können in JavaScript Array angelegt werden (wie in Java)
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8045846.js"></script>
 
-        <h4>HashArrays</h4>
+        <h4 id="hasharrays">HashArrays</h4>
         <p>
           Mit Hilfe von HashArrays kann man Schlüssel-Wert Paare in JavaScript abbilden (technisch sind das auch Objekte in JavaScript). Solche HashArrays werden mit geschweiften Klammern gebildet.
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/8046106.js"></script>
 
-        <h4>Verzögerte Ausführung</h4>
+        <h4 id="delay">Verzögerte Ausführung</h4>
         <p>
           Mit der Funktion <pre>setTimeout</pre> (einmalige Ausführung) bzw. <pre>setInterval</pre> (wiederholte Ausführung) kann man Funktionen verzögert (und wiederholt) ausführen lassen. Als erster Parameter wird entweder eine anonyme Funktion übergeben oder der Name einer definierten Funktion und dann noch die Zeit in Millisekunden, wie lange gewartet werden soll.
         </p>
@@ -109,7 +109,7 @@
         <p>Mit <pre>setInterval</pre> kann man auch einen kleinen Countdown basteln:</p>
         <script src="https://gist.github.com/AndreasLochwitz/8051603.js"></script>
 
-        <h4>Zufallszahlen</h4>
+        <h4 id="zufall">Zufallszahlen</h4>
         <p>
           Mit Hilfe der Methode <pre>Math.random</pre> kann man Zufallszahlen generieren.
         </p>
