@@ -62,6 +62,7 @@
           <li><a href="#leafletdistancesort">Orte nach Entfernung sortieren</a></li>
           <li><a href="#jquerymobilefixed">jQuery Mobile - Header/Footer am Rand fixieren</a></li>
           <li><a href="#jquerymobiletoogle">jQuery Mobile - Ausblenden von Header/Footer deaktiveren</a></li>
+          <li><a href="#jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</a></li>
 
         </ul>
       </nav>
@@ -240,6 +241,12 @@
           Standardmäßig ist es bei <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> eingestellt dass wenn man auf den Content-Bereich klickt/tapt die Header und Footer ausgeblendet werden und mit einem weitern klick/tap wieder eingeblendet werden. Möchte man dies deaktivieren kann man folgendes Attribut setzen: <pre>data-tap-toggle="false"</pre>
         </p>
         <script src="https://gist.github.com/AndreasLochwitz/bf81cf2ad06bef523db2.js"></script>
+
+        <h4 id="jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</h4>
+        <p>
+          Mit dem Online-Tool <a href="https://codiqa.com" target="_blank">Codiqa</a> kann man auf schnell und komfortabel Oberflächen für jQuery Mobile erstellen. Im Demo-Modus kann man unten rechts sich den Code für die einzelnen Seiten anzeigen lassen und kopieren. Wenn man dabei aber eine Tabbar benutzt, funktioniert das nicht ohne weiteres - um den Fehler zu beheben, muss man die data-role von tabbar zu navbar ändern und das ganze in ein weiters DIV einschließen wo die data-role auf tabs gesetzt wurde. (Nicht vergessen die DIV's auch wieder zu schließen)
+        </p>
+        <script src="https://gist.github.com/AndreasLochwitz/c8f76a37e7bdf324173d.js"></script>
 
       </section>
 
