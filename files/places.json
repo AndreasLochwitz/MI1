@@ -1,0 +1,27 @@
+[
+  {
+    "name": "ZIMT",
+    "lat": 53.055017,
+    "lng": 8.783510
+  },
+  {
+    "name": "Roland",
+    "lat": 53.075860,
+    "lng": 8.807281
+  },
+  {
+    "name": "Hauptbahnhof Bremen",
+    "lat": 53.083001,
+    "lng": 8.813733
+  },
+  {
+    "name": "Universität Bremen",
+    "lat": 53.107177,
+    "lng":  8.852249
+  },
+  {
+    "name": "Weserpark Bremen",
+    "lat": 53.049597,
+    "lng": 8.956771
+  }
+]
