@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Formular auslesen</title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <style type="text/css">
+        div#ausgabe {
+            margin-top: 20px;
+            padding: 5px;
+            border: 1px solid black;
+            background-color: yellow;
+            width: 500px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: none;
+        }
+        
+        div#ausgabe span {
+            font-weight: bold;
+        }
+        
+        label,
+        textarea,
+        input {
+            display: block;
+        }
+        
+        label[for^="radio"],
+        input[type="radio"],
+        input[type="checkbox"] {
+            display: inline;
+        }
+        
+        button {
+            margin-top: 15px;
+        }
+        
+        .elementWrap {
+            border: 1px lightslategrey dashed;
+            max-width: 500px;
+            margin-bottom: 10px;
+            margin-right: auto;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formular auslesen</h1>
+
+    <form>
+        <div class="elementWrap">
+            <!-- Textarea -->
+            <label for="textareaElement">Textarea</label>
+            <textarea id="textareaElement"></textarea>
+        </div>
+        <div class="elementWrap">
+            <!-- Input (Text) -->
+            <label for="inputTextElement">Input (Text)</label>
+            <input type="text" id="inputTextElement"></input>
+        </div>
+        <div class="elementWrap">
+            <!-- Input (Radio) -->
+            <div>Input (Radio)</div>
+            <div>
+                <label for="radio1Element">Radio 1</label>
+                <input type="radio" id="radio1Element" name="radio" value="Radio 1"></input>
+                <label for="radio2Element">Radio 2</label>
+                <input type="radio" id="radio2Element" name="radio" value="Radio 2"></input>
+            </div>
+        </div>
+        <div class="elementWrap">
+            <!-- Input (Checkbox) -->
+            <label for="checkboxElement">Checkbox</label>
+            <input type="checkbox" id="checkboxElement" name="checkboxElement">Checkbox-Wahl
+        </div>
+        <div class="elementWrap">
+            <!-- Select -->
+            <label for="selectElement">Select-Auswahl</label>
+            <select name="selectElement" id="selectElement" size="5">
+                <option value="Option 1">Option 1</option>
+                <option value="Option 2">Option 2</option>
+                <option value="Option 3">Option 3</option>
+                <option value="Option 4">Option 4</option>
+                <option value="Option 5">Option 5</option>
+                <option value="Option 6">Option 6</option>
+            </select>
+        </div>
+
+        <button type="button" id="formularButton">Klick</button>
+        <button type="button" id="clearButton">Clear</button>
+
+    </form>
+
+    <div id="ausgabe">
+        <span>Ergebnis</span>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Event-Handler für formularButton hinzufügen
+        $("#formularButton").on('click', function() {
+           // Referenz auf Result-Div holen
+           var divResult = $("div#result");
+           // Inhalt von DIV Ausgabe entfernen
+           divResult.empty();
+           // Formularfelder auslesen und deren Werte im Ausgabe-DIV anzeigen
+           divResult.append("Inhalt von textarea = " + getTextAreaContent() + "<br />");
+           divResult.append("Inhalt von input (Text) = " + getInputTextContent() + "<br />");
+           divResult.append("Inhalt von input (Radio) = " + getRadioContent() + "<br />");
+           divResult.append("Inhalt von input (Checkbox) = " + getCheckboxContent() + "<br />");
+           divResult.append("Inhalt von select = " + getSelectContent() + "<br />");
+           $("div#ausgabe").css("display", "block"); 
+        });
+        
+        $("#clearButton").on('click', function() {
+            clearContent();
+        });
+        
+        function getTextAreaContent() {
+            return $("#textareaElement").val();
+        }
+        
+        function getInputTextContent() {
+            return $("#inputTextElement").val();
+        }
+        
+        function getRadioContent() {
+            return $( "input:radio[name=radio]:checked" ).val();
+        }
+        
+        function getCheckboxContent() {
+            return $("#checkboxElement").prop("checked");
+        }
+        
+        function getSelectContent() {
+            // liefert den Wert von Value des ausgewählten Option-Elements zurück
+            return $("#selectElement").val();
+        }
+        
+        function clearContent() {
+            $("#textareaElement").val("");
+            $("#inputTextElement").val("");
+            // Radio-Element wieder auf den ersten Eintrag setzen
+            $("#radio1Element").prop("checked", true);
+            // Checkbox - kein Element auswählen
+            $("#checkboxElement").prop("checked", false);
+            // Select - kein Element auswählen
+            $("#selectElement").val([]);
+            // Inhalt vom Ausgabe-DIV löschen
+            $("div#result").empty();
+            // Ausgabe-DIV ausblenden (verstecken)
+            $("div#ausgabe").css("display", "none");
+        }
+    </script>
+</body>
+
+</html>

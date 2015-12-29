@@ -2,29 +2,29 @@
 <html>
 
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-  <!--[if lt IE 9]>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-  <!-- Test -->
-  <title>MI1-Notizen</title>
+    <!-- Test -->
+    <title>MI1-Notizen</title>
 </head>
 
 <body>
-  <div id="container">
-    <div class="inner">
+    <div id="container">
+        <div class="inner">
 
-      <header>
-        <h1>MI1</h1>
-        <h2>Notizen</h2>
-      </header>
+            <header>
+                <h1>MI1</h1>
+                <h2>Notizen</h2>
+            </header>
 
-      <!--
+            <!--
       <section id="downloads" class="clearfix">
         <a href="https://github.com/AndreasLochwitz/MI1/zipball/master" id="download-zip" class="button">
           <span>Download .zip</span>
@@ -37,249 +37,290 @@
         </a>
       </section>
 -->
-      <hr>
+            <hr>
 
-      <nav>
-        <ul>
-          <li><a href="#kommentare">Kommentare</a></li>
-          <li><a href="#variablen">Variablen</a></li>
-          <li><a href="#konsole">Ausgaben auf der Konsole</a></li>
-          <li><a href="#schleifen">Schleifen</a></li>
-          <li><a href="#funktionen">Funktionen</a></li>
-          <li><a href="#arrays">Arrays</a></li>
-          <li><a href="#hasharrays">HashArrays</a></li>
-          <li><a href="#delay">Verzögerte Ausführung</a></li>
-          <li><a href="#zufall">Zufallszahlen</a></li>
-          <li><a href="#redirect">Weiterleitung mit JavaScript</a></li>
-          <li><a href="#jquery">JQuery</a></li>
-          <li><a href="#jqueryappend">JQuery - Elemente hinzufügen</a></li>
-          <li><a href="#jqueryeventhandler">jQuery - Eventhandler</a></li>
-          <li><a href="#json">JQuery - JSON-Datei laden und hinzufügen</a></li>
-          <li><a href="#serialisierung">Serialisierung</a></li>
-          <li><a href="#localstorage">LocalStorage</a></li>
-          <li><a href="#leaflet">Karten mit Leaflet</a></li>
-          <li><a href="#leafletmarker">Marker zu Leaflet hinzufügen</a></li>
-          <li><a href="#leafletmarkerevents">Events von Leaflet-Marker</a></li>
-          <li><a href="#leafletdistance">Entfernung berechnen</a></li>
-          <li><a href="#leafletdistancesort">Orte nach Entfernung sortieren</a></li>
-          <li><a href="#jquerymobilefixed">jQuery Mobile - Header/Footer am Rand fixieren</a></li>
-          <li><a href="#jquerymobiletoogle">jQuery Mobile - Ausblenden von Header/Footer deaktiveren</a></li>
-          <li><a href="#jquerymobiletemplate">jQuery Mobile - Grundgerüst für Codiqa</a></li>
-          <li><a href="#jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</a></li>
-          <li><a href="#geolocation">Geokoordinaten mit JavaScript ermitteln</a></li>
+            <nav>
+                <ul>
+                    <li><a href="#kommentare">Kommentare</a></li>
+                    <li><a href="#variablen">Variablen</a></li>
+                    <li><a href="#konsole">Ausgaben auf der Konsole</a></li>
+                    <li><a href="#schleifen">Schleifen</a></li>
+                    <li><a href="#funktionen">Funktionen</a></li>
+                    <li><a href="#arrays">Arrays</a></li>
+                    <li><a href="#hasharrays">HashArrays</a></li>
+                    <li><a href="#delay">Verzögerte Ausführung</a></li>
+                    <li><a href="#zufall">Zufallszahlen</a></li>
+                    <li><a href="#redirect">Weiterleitung mit JavaScript</a></li>
+                    <li><a href="#jquery">jQuery</a></li>
+                    <li><a href="#jqueryappend">jQuery - Elemente hinzufügen</a></li>
+                    <li><a href="#jqueryeventhandler">jQuery - Eventhandler</a></li>
+                    <li><a href="#jqueryformular">jQuery - Formular-Werte auslesen</a></li>
+                    <li><a href="#json">jQuery - JSON-Datei laden und hinzufügen</a></li>
+                    <li><a href="#serialisierung">Serialisierung</a></li>
+                    <li><a href="#localstorage">LocalStorage</a></li>
+                    <li><a href="#leaflet">Karten mit Leaflet</a></li>
+                    <li><a href="#leafletmarker">Marker zu Leaflet hinzufügen</a></li>
+                    <li><a href="#leafletmarkerevents">Events von Leaflet-Marker</a></li>
+                    <li><a href="#leafletdistance">Entfernung berechnen</a></li>
+                    <li><a href="#leafletdistancesort">Orte nach Entfernung sortieren</a></li>
+                    <li><a href="#jquerymobilefixed">jQuery Mobile - Header/Footer am Rand fixieren</a></li>
+                    <li><a href="#jquerymobiletoogle">jQuery Mobile - Ausblenden von Header/Footer deaktiveren</a></li>
+                    <li><a href="#jquerymobiletemplate">jQuery Mobile - Grundgerüst für Codiqa</a></li>
+                    <li><a href="#jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</a></li>
+                    <li><a href="#geolocation">Geokoordinaten mit JavaScript ermitteln</a></li>
 
-        </ul>
-      </nav>
+                </ul>
+            </nav>
 
-      <section id="main_content">
-        <h3>
+            <section id="main_content">
+                <h3>
           Allgemeines
         </h3>
-        <h4 id="kommentare">
+                <h4 id="kommentare">
           Kommentare
         </h4>
-        <p>Kommentare können in JavaScript mit
-          <pre>//</pre> bzw.
-          <pre>/* ... */</pre> gebildet werden.</p>
-        <script src="https://gist.github.com/AndreasLochwitz/8045347.js"></script>
-        <script src="https://gist.github.com/AndreasLochwitz/8045377.js"></script>
+                <p>Kommentare können in JavaScript mit
+                    <pre>//</pre> bzw.
+                    <pre>/* ... */</pre> gebildet werden.</p>
+                <script src="https://gist.github.com/AndreasLochwitz/8045347.js"></script>
+                <script src="https://gist.github.com/AndreasLochwitz/8045377.js"></script>
 
-        <h4 id="variablen">Variablen</h4>
-        <p>Variablen werden mit dem Schlüsselwort
-          <pre>var</pre> eingeleitet. Im Gegensatz zu Java bezieht sich die Sichtbarkeit von Variablen nicht auf den aktuellen Block sondern auf die aktuelle Funktion. Werden Funktionen in einander verschachtelt so können die inneren Funktionen auf die Variablen
-          der äußeren zugreifen.</p>
+                <h4 id="variablen">Variablen</h4>
+                <p>Variablen werden mit dem Schlüsselwort
+                    <pre>var</pre> eingeleitet. Im Gegensatz zu Java bezieht sich die Sichtbarkeit von Variablen nicht auf
+                    den aktuellen Block sondern auf die aktuelle Funktion. Werden Funktionen in einander verschachtelt so
+                    können die inneren Funktionen auf die Variablen der äußeren zugreifen.</p>
 
-        <script src="https://gist.github.com/AndreasLochwitz/8045571.js"></script>
-        <script src="https://gist.github.com/AndreasLochwitz/8045630.js"></script>
+                <script src="https://gist.github.com/AndreasLochwitz/8045571.js"></script>
+                <script src="https://gist.github.com/AndreasLochwitz/8045630.js"></script>
 
-        <h4 id="konsole">Ausgaben auf der Konsole</h4>
-        <p>Mit dem Befehl
-          <pre>console.log</pre> kann man sich Variableninhalte und Texte auf der JavaScript Konsole des Browsers ausgeben lassen.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8045735.js"></script>
+                <h4 id="konsole">Ausgaben auf der Konsole</h4>
+                <p>Mit dem Befehl
+                    <pre>console.log</pre> kann man sich Variableninhalte und Texte auf der JavaScript Konsole des Browsers
+                    ausgeben lassen.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8045735.js"></script>
 
-        <h4 id="schleifen">Schleifen</h4>
-        <p>Mit dem Schlüsselwort
-          <pre>for</pre> kann man wie in Java eine Schleife erstellen:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/8dfced75640b2e722ac3.js"></script>
-        <p>Eine
-          <pre>while</pre>Schleife gibt es auch:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/1da82c89a521ac0c2f79.js"></script>
+                <h4 id="schleifen">Schleifen</h4>
+                <p>Mit dem Schlüsselwort
+                    <pre>for</pre> kann man wie in Java eine Schleife erstellen:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/8dfced75640b2e722ac3.js"></script>
+                <p>Eine
+                    <pre>while</pre>Schleife gibt es auch:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/1da82c89a521ac0c2f79.js"></script>
 
-        <h4 id="funktionen">Funktionen definieren</h4>
-        <p>
-          Mit dem Schlüsselwort
-          <pre>function</pre> kann man Funktionen in JavaScript definieren. In Klammern kann man Parameter angeben. Im Gegensatz zu Java werden keine Typen angegeben. Mit
-          <pre>return</pre> kann ein Rückgabewert zurückgegeben werden.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8045685.js"></script>
+                <h4 id="funktionen">Funktionen definieren</h4>
+                <p>
+                    Mit dem Schlüsselwort
+                    <pre>function</pre> kann man Funktionen in JavaScript definieren. In Klammern kann man Parameter angeben.
+                    Im Gegensatz zu Java werden keine Typen angegeben. Mit
+                    <pre>return</pre> kann ein Rückgabewert zurückgegeben werden.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8045685.js"></script>
 
-        <h4 id="arrays">Arrays</h4>
-        <p>
-          Mit den eckigen Klammern können in JavaScript Array angelegt werden (wie in Java)
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8045846.js"></script>
+                <h4 id="arrays">Arrays</h4>
+                <p>
+                    Mit den eckigen Klammern können in JavaScript Array angelegt werden (wie in Java)
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8045846.js"></script>
 
-        <h4 id="hasharrays">HashArrays</h4>
-        <p>
-          Mit Hilfe von HashArrays kann man Schlüssel-Wert Paare in JavaScript abbilden (technisch sind das auch Objekte in JavaScript). Solche HashArrays werden mit geschweiften Klammern gebildet.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8046106.js"></script>
+                <h4 id="hasharrays">HashArrays</h4>
+                <p>
+                    Mit Hilfe von HashArrays kann man Schlüssel-Wert Paare in JavaScript abbilden (technisch sind das auch Objekte in JavaScript).
+                    Solche HashArrays werden mit geschweiften Klammern gebildet.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8046106.js"></script>
 
-        <h4 id="delay">Verzögerte Ausführung</h4>
-        <p>
-          Mit der Funktion
-          <pre>setTimeout</pre> (einmalige Ausführung) bzw.
-          <pre>setInterval</pre> (wiederholte Ausführung) kann man Funktionen verzögert (und wiederholt) ausführen lassen. Als erster Parameter wird entweder eine anonyme Funktion übergeben oder der Name einer definierten Funktion und dann noch die Zeit in
-          Millisekunden, wie lange gewartet werden soll.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8046600.js"></script>
-        <script src="https://gist.github.com/AndreasLochwitz/8051571.js"></script>
-        <p>Mit
-          <pre>setInterval</pre> kann man auch einen kleinen Countdown basteln:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/8051603.js"></script>
+                <h4 id="delay">Verzögerte Ausführung</h4>
+                <p>
+                    Mit der Funktion
+                    <pre>setTimeout</pre> (einmalige Ausführung) bzw.
+                    <pre>setInterval</pre> (wiederholte Ausführung) kann man Funktionen verzögert (und wiederholt) ausführen
+                    lassen. Als erster Parameter wird entweder eine anonyme Funktion übergeben oder der Name einer definierten
+                    Funktion und dann noch die Zeit in Millisekunden, wie lange gewartet werden soll.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8046600.js"></script>
+                <script src="https://gist.github.com/AndreasLochwitz/8051571.js"></script>
+                <p>Mit
+                    <pre>setInterval</pre> kann man auch einen kleinen Countdown basteln:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/8051603.js"></script>
 
-        <h4 id="zufall">Zufallszahlen</h4>
-        <p>
-          Mit Hilfe der Methode
-          <pre>Math.random</pre> kann man Zufallszahlen generieren.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/8126006.js"></script>
-        <script src="https://gist.github.com/AndreasLochwitz/8126025.js"></script>
+                <h4 id="zufall">Zufallszahlen</h4>
+                <p>
+                    Mit Hilfe der Methode
+                    <pre>Math.random</pre> kann man Zufallszahlen generieren.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/8126006.js"></script>
+                <script src="https://gist.github.com/AndreasLochwitz/8126025.js"></script>
 
-        <h4 id="redirect">Weiterleitung mit JavaScript</h4>
-        <p>
-          Mittels der Eigenschaft <pre>window.location.href</pre> kann man eine Weiterleitung im Browser veranlassen:
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/c21f5fd2e7d910ca5aa2.js"></script>
+                <h4 id="redirect">Weiterleitung mit JavaScript</h4>
+                <p>
+                    Mittels der Eigenschaft <pre>window.location.href</pre> kann man eine Weiterleitung im Browser veranlassen:
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/c21f5fd2e7d910ca5aa2.js"></script>
 
-        <h4 id="jquery">jQuery</h4>
-        <p>
-          Mit Hilfe der Bibliothek <a href="http://jquery.com" target="_blank">jQuery</a> kann man relativ einfach ohne viel Code viel erreichen. Die API ist <a href="http://api.jquery.com/" target="_blank">hier</a> beschrieben.
-          <br />
-          <br /> Nachdem man die JavaScript-Bibliothek mittels einem Script-Tag in den Header eingebunden hat kann man über
-          <pre>$</pre> auf die Funktionalität von jQuery zugreifen. Das Vorgehen ist das man zuerst mittels eines <a href="http://api.jquery.com/category/selectors/" target="_blank">Selektors</a> Elemente auf der Seite auswählt und diese dann verändert.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/b1ab97d64688a015be60.js"></script>
+                <h4 id="jquery">jQuery</h4>
+                <p>
+                    Mit Hilfe der Bibliothek <a href="http://jquery.com" target="_blank">jQuery</a> kann man relativ einfach
+                    ohne viel Code viel erreichen. Die API ist <a href="http://api.jquery.com/" target="_blank">hier</a>                    beschrieben.
+                    <br />
+                    <br /> Nachdem man die JavaScript-Bibliothek mittels einem Script-Tag in den Header eingebunden hat kann man
+                    über
+                    <pre>$</pre> auf die Funktionalität von jQuery zugreifen. Das Vorgehen ist das man zuerst mittels eines
+                    <a href="http://api.jquery.com/category/selectors/" target="_blank">Selektors</a> Elemente auf der Seite
+                    auswählt und diese dann verändert.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/b1ab97d64688a015be60.js"></script>
 
-        <h4 id="jqueryappend">jQuery - HTML hinzfügen</h4>
-        <p>
-          Mit Hilfe der jQuery-Funktion
-          <pre><a href="http://api.jquery.com/append/" target="_blank">append</a></pre> kann man per JavaScript einfach neue HTML-Elemente einer Webseite hinzufügen.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/a9e4a27b64973cd3a551.js"></script>
+                <h4 id="jqueryappend">jQuery - HTML hinzfügen</h4>
+                <p>
+                    Mit Hilfe der jQuery-Funktion
+                    <pre><a href="http://api.jquery.com/append/" target="_blank">append</a></pre> kann man per JavaScript
+                    einfach neue HTML-Elemente einer Webseite hinzufügen.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/a9e4a27b64973cd3a551.js"></script>
 
-        <h4 id="jqueryeventhandler">jQuery - Eventhandler</h4>
-        <p>
-          jQuery stellt eine Methode <pre>.on()</pre> bereit. Mit dieser kann man beliebige Events für HTML-Elemente empfangen. <a href="http://api.jquery.com/on/" target="_blank">Weitere Informationen zu .on()</a>
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/93cb4c899a1a9ba09f19.js"></script>
+                <h4 id="jqueryeventhandler">jQuery - Eventhandler</h4>
+                <p>
+                    jQuery stellt eine Methode <pre>.on()</pre> bereit. Mit dieser kann man beliebige Events für HTML-Elemente
+                    empfangen. <a href="http://api.jquery.com/on/" target="_blank">Weitere Informationen zu .on()</a>
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/93cb4c899a1a9ba09f19.js"></script>
 
-        <h4 id="json">JSON-Datei laden und hinzufügen</h4>
-        <p>Das <a href="http://json.org/json-de.html" target="_blank">json</a>-Format kann verwendet werden um Daten bei einer Webseite einzulesen. In jQuery gibt es eine Funktion namens
-          <pre>$.getJSON</pre> um eine json-Datei einzulesen. (Hinweis: Die funktioniert nur wenn die Webseite über einen Server ausgeliefert wird. Wenn man die Seite direkt über den Finder/Explorer öffnet geht es auch Sicherheitsgründen nicht)</p>
-
-        <p>Es sei folgende JSON-Datei gegeben (von einem einfachen Chat):</p>
-        <script src="https://gist.github.com/AndreasLochwitz/d58f4f00067a6dc6fd66.js"></script>
-
-        <p>Mit folgendem Code kann die Datei geladen werden:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/b58b27a320d3844afc53.js"></script>
-
-        <p>Ein Beispiel wo der Inhalt auf der Seite angezeigt wird:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/fdaba03a803cb12d7b2e.js"></script>
-
-        <h4 id="serialisierung">Serialisierung</h4>
-        <p>Gegeben sei folgendes Objekt:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/60ff217bc1432d374fe7.js"></script>
-        <p>Um dieses zu serialisieren als JSON-String kann die Funktion
-          <pre>JSON.stringify</pre> verwendet werden:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/f9756a056907f16fdd87.js"></script>
-        <p>Um aus einem serialisierten JSON-String das Objekt wiederherzustellen gibt es die Funktion
-          <pre>JSON.parse</pre>
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/549cece6ec91080170c3.js"></script>
-
-        <h4 id="localstorage">Daten speichern</h4>
-        <p>Wenn man eine Webseite neu lädt gehen alle getätigten Eingaben verloren. Man kann mit dem
-          <pre>localStorage</pre> Daten zwischenspeichern (bis ca. 5 MB) die man später wieder auslesen kann. Hinweis: Wenn man komplexere Daten speichern will muss man diese zuvor mittels
-          <pre>JSON.stringify</pre> serialisieren.</p>
-        <script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
-        <p>Weitere Informationen zum localStorage gibt es <a href="http://diveintohtml5.info/storage.html" target="_blank">hier</a></p>
-
-        <h4 id="leaflet">Karten mit Leaflet</h4>
-        <p>Mit der Bibliothek <a href="http://leafletjs.com/" target="_blank">Leaflet</a> kann man auf einfache Weise eine Karte in eine Webseite einbauen.</p>
-        <script src="https://gist.github.com/AndreasLochwitz/558e51eac384c158d6c8.js"></script>
-
-        <h4 id="leafletmarker">Marker zu Leaflet hinzufügen</h4>
-        <p>Mit
-          <pre>L.marker</pre> kann ein neuer Marker erstellt und der Karte hinzugefügt werden:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/d8364cff4cdc135817c4.js"></script>
-
-        <h4 id="leafletmarkerevents">Events von Leaflet-Marker</h4>
-        <p>
-          Mit der Methode
-          <pre>.on</pre> kann man für Marker Events registrieren. Beispiel für die Ausgabe einer Meldung wenn man auf einen Marker geklickt hat:
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/a4dda89454cfddaa0af2.js"></script>
-        <p>Die möglichen Events für Marker sind <a href="http://leafletjs.com/reference.html#marker-click" target="_blank">hier</a> beschrieben.</p>
-
-        <h4 id="leafletdistance">Entfernung berechnen</h4>
-        <p>Die Leaflet-Bibliothek bietet für Koordinaten ein Objekt namens
-          <pre><a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLng</a></pre> welches eine Funktion mit dem Namen
-          <pre>distanceTo</pre> bereitstellt. Darüber kann man Entfernung in Meterns zwischen zwei Punkten ausrechnen:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/371e47534d117212f350.js"></script>
-
-        <h4 id="leafletdistancesort">Orte nach Entfernung sortieren</h4>
-        <p>Gegeben sei folgende JSON-Datei mit Orten und Geokoordinaten:</p>
-        <script src="https://gist.github.com/AndreasLochwitz/54e1e8056ca3d6c81d81.js"></script>
-        <p>
-          Um diese Datei einzulesen, zu sortieren nach steigender Entfernung und auf der Konsole auszugeben kann man folgendes Programm verwenden:
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/dedf7d29a17295619384.js"></script>
-        <p>
-          <a href="http://andreaslochwitz.github.io/MI1/files/sortdistance.html" target="_blank">Beispiel</a> (JavaScript-Konsole einblenden). Details zur Sort-Funktion von Arrays sind <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort" target="_blank">hier</a> beschrieben.
-        </p>
-
-        <h4 id="jquerymobilefixed">jQuery Mobile - Header/Footer am Rand fixieren</h4>
-        <p>
-          Bei <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> kann man mit Hilfe des Attributes <pre>data-position="fixed"</pre> dafür sorgen, dass der Header (bzw. und/oder der Footer) fest am Rand verbleiben, auch wenn man die Seite scrollt.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/0e06d14c78af277f899b.js"></script>
-
-        <h4 id="jquerymobiletoogle">jQuery Mobile - Ausblenden von Header/Footer deaktiveren</h4>
-        <p>
-          Standardmäßig ist es bei <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> eingestellt dass wenn man auf den Content-Bereich klickt/tapt die Header und Footer ausgeblendet werden und mit einem weitern klick/tap wieder eingeblendet werden. Möchte man dies deaktivieren kann man folgendes Attribut setzen: <pre>data-tap-toggle="false"</pre>
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/bf81cf2ad06bef523db2.js"></script>
-
-        <h4 id="jquerymobiletemplate">jQuery Mobile Grundgerüst für Codiqa</h4>
-        <p>
-            Folgendes Grundgerüst kann verwendet werden für die Inhalte von Codiqa:
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/1677187dc3e0186e177d.js"></script>
-
-        <h4 id="jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</h4>
-        <p>
-          Mit dem Online-Tool <a href="https://codiqa.com" target="_blank">Codiqa</a> kann man auf schnell und komfortabel Oberflächen für jQuery Mobile erstellen. Im Demo-Modus kann man unten rechts sich den Code für die einzelnen Seiten anzeigen lassen und kopieren. Wenn man dabei aber eine Tabbar benutzt, funktioniert das nicht ohne weiteres - um den Fehler zu beheben, muss man die data-role von tabbar zu navbar ändern und das ganze in ein weiters DIV einschließen wo die data-role auf tabs gesetzt wurde. (Nicht vergessen die DIV's auch wieder zu schließen)
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/c8f76a37e7bdf324173d.js"></script>
-
-        <h4 id="geolocation">Geokoordinaten mit JavaScript ermitteln</h4>
-        <p>
-          Mit Hilfe der Funktionen von <pre>navigator.geolocation</pre> kann man die Geokoordinaten mit JavaScript abfragen.
-        </p>
-        <script src="https://gist.github.com/AndreasLochwitz/eae8eb57100f01ddc64f.js"></script>
-
-      </section>
-
-      <footer>
-        Mi1 is maintained by <a href="https://github.com/AndreasLochwitz">AndreasLochwitz</a>
-        <br> This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-      </footer>
+                <h4 id="jqueryformular">jQuery - Formular-Werte auslesen</h4>
+                <p>
+                    jQuery stellt die Funktionen <pre>val()</pre> und <pre>prop()</pre> zur Verfügung um Werte von Formularelementen
+                    auslesen zu können. Ein Beispiel hierfür ist <a href="files/formular.html" target="_blank">hier</a>.
+                    (Bitte auch den Quelltext der Seite betrachten)
+                </p>
 
 
+                <h4 id="json">JSON-Datei laden und hinzufügen</h4>
+                <p>Das <a href="http://json.org/json-de.html" target="_blank">json</a>-Format kann verwendet werden um Daten
+                    bei einer Webseite einzulesen. In jQuery gibt es eine Funktion namens
+                    <pre>$.getJSON</pre> um eine json-Datei einzulesen. (Hinweis: Die funktioniert nur wenn die Webseite
+                    über einen Server ausgeliefert wird. Wenn man die Seite direkt über den Finder/Explorer öffnet geht es
+                    auch Sicherheitsgründen nicht)</p>
+
+                <p>Es sei folgende JSON-Datei gegeben (von einem einfachen Chat):</p>
+                <script src="https://gist.github.com/AndreasLochwitz/d58f4f00067a6dc6fd66.js"></script>
+
+                <p>Mit folgendem Code kann die Datei geladen werden:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/b58b27a320d3844afc53.js"></script>
+
+                <p>Ein Beispiel wo der Inhalt auf der Seite angezeigt wird:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/fdaba03a803cb12d7b2e.js"></script>
+
+                <h4 id="serialisierung">Serialisierung</h4>
+                <p>Gegeben sei folgendes Objekt:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/60ff217bc1432d374fe7.js"></script>
+                <p>Um dieses zu serialisieren als JSON-String kann die Funktion
+                    <pre>JSON.stringify</pre> verwendet werden:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/f9756a056907f16fdd87.js"></script>
+                <p>Um aus einem serialisierten JSON-String das Objekt wiederherzustellen gibt es die Funktion
+                    <pre>JSON.parse</pre>
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/549cece6ec91080170c3.js"></script>
+
+                <h4 id="localstorage">Daten speichern</h4>
+                <p>Wenn man eine Webseite neu lädt gehen alle getätigten Eingaben verloren. Man kann mit dem
+                    <pre>localStorage</pre> Daten zwischenspeichern (bis ca. 5 MB) die man später wieder auslesen kann. Hinweis:
+                    Wenn man komplexere Daten speichern will muss man diese zuvor mittels
+                    <pre>JSON.stringify</pre> serialisieren.</p>
+                <script src="https://gist.github.com/AndreasLochwitz/5ff06048292719f774e7.js"></script>
+                <p>Weitere Informationen zum localStorage gibt es <a href="http://diveintohtml5.info/storage.html" target="_blank">hier</a></p>
+
+                <h4 id="leaflet">Karten mit Leaflet</h4>
+                <p>Mit der Bibliothek <a href="http://leafletjs.com/" target="_blank">Leaflet</a> kann man auf einfache Weise
+                    eine Karte in eine Webseite einbauen.</p>
+                <script src="https://gist.github.com/AndreasLochwitz/558e51eac384c158d6c8.js"></script>
+
+                <h4 id="leafletmarker">Marker zu Leaflet hinzufügen</h4>
+                <p>Mit
+                    <pre>L.marker</pre> kann ein neuer Marker erstellt und der Karte hinzugefügt werden:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/d8364cff4cdc135817c4.js"></script>
+
+                <h4 id="leafletmarkerevents">Events von Leaflet-Marker</h4>
+                <p>
+                    Mit der Methode
+                    <pre>.on</pre> kann man für Marker Events registrieren. Beispiel für die Ausgabe einer Meldung wenn man
+                    auf einen Marker geklickt hat:
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/a4dda89454cfddaa0af2.js"></script>
+                <p>Die möglichen Events für Marker sind <a href="http://leafletjs.com/reference.html#marker-click" target="_blank">hier</a>                    beschrieben.</p>
+
+                <h4 id="leafletdistance">Entfernung berechnen</h4>
+                <p>Die Leaflet-Bibliothek bietet für Koordinaten ein Objekt namens
+                    <pre><a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLng</a></pre> welches eine
+                    Funktion mit dem Namen
+                    <pre>distanceTo</pre> bereitstellt. Darüber kann man Entfernung in Meterns zwischen zwei Punkten ausrechnen:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/371e47534d117212f350.js"></script>
+
+                <h4 id="leafletdistancesort">Orte nach Entfernung sortieren</h4>
+                <p>Gegeben sei folgende JSON-Datei mit Orten und Geokoordinaten:</p>
+                <script src="https://gist.github.com/AndreasLochwitz/54e1e8056ca3d6c81d81.js"></script>
+                <p>
+                    Um diese Datei einzulesen, zu sortieren nach steigender Entfernung und auf der Konsole auszugeben kann man folgendes Programm
+                    verwenden:
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/dedf7d29a17295619384.js"></script>
+                <p>
+                    <a href="http://andreaslochwitz.github.io/MI1/files/sortdistance.html" target="_blank">Beispiel</a> (JavaScript-Konsole
+                    einblenden). Details zur Sort-Funktion von Arrays sind <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+                    target="_blank">hier</a> beschrieben.
+                </p>
+
+                <h4 id="jquerymobilefixed">jQuery Mobile - Header/Footer am Rand fixieren</h4>
+                <p>
+                    Bei <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> kann man mit Hilfe des Attributes
+                    <pre>data-position="fixed"</pre> dafür sorgen, dass der Header (bzw. und/oder der Footer) fest am Rand
+                    verbleiben, auch wenn man die Seite scrollt.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/0e06d14c78af277f899b.js"></script>
+
+                <h4 id="jquerymobiletoogle">jQuery Mobile - Ausblenden von Header/Footer deaktiveren</h4>
+                <p>
+                    Standardmäßig ist es bei <a href="http://jquerymobile.com/" target="_blank">jQuery Mobile</a> eingestellt
+                    dass wenn man auf den Content-Bereich klickt/tapt die Header und Footer ausgeblendet werden und mit einem
+                    weitern klick/tap wieder eingeblendet werden. Möchte man dies deaktivieren kann man folgendes Attribut
+                    setzen: <pre>data-tap-toggle="false"</pre>
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/bf81cf2ad06bef523db2.js"></script>
+
+                <h4 id="jquerymobiletemplate">jQuery Mobile Grundgerüst für Codiqa</h4>
+                <p>
+                    Folgendes Grundgerüst kann verwendet werden für die Inhalte von Codiqa:
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/1677187dc3e0186e177d.js"></script>
+
+                <h4 id="jquerymobilecodiqa">jQuery Mobile - Tabbar von Codiqa reparieren</h4>
+                <p>
+                    Mit dem Online-Tool <a href="https://codiqa.com" target="_blank">Codiqa</a> kann man auf schnell und
+                    komfortabel Oberflächen für jQuery Mobile erstellen. Im Demo-Modus kann man unten rechts sich den Code
+                    für die einzelnen Seiten anzeigen lassen und kopieren. Wenn man dabei aber eine Tabbar benutzt, funktioniert
+                    das nicht ohne weiteres - um den Fehler zu beheben, muss man die data-role von tabbar zu navbar ändern
+                    und das ganze in ein weiters DIV einschließen wo die data-role auf tabs gesetzt wurde. (Nicht vergessen
+                    die DIV's auch wieder zu schließen)
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/c8f76a37e7bdf324173d.js"></script>
+
+                <h4 id="geolocation">Geokoordinaten mit JavaScript ermitteln</h4>
+                <p>
+                    Mit Hilfe der Funktionen von <pre>navigator.geolocation</pre> kann man die Geokoordinaten mit JavaScript
+                    abfragen.
+                </p>
+                <script src="https://gist.github.com/AndreasLochwitz/eae8eb57100f01ddc64f.js"></script>
+
+            </section>
+
+            <footer>
+                Mi1 is maintained by <a href="https://github.com/AndreasLochwitz">AndreasLochwitz</a>
+                <br> This page was generated by <a href="https://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+            </footer>
+
+
+        </div>
     </div>
-  </div>
 </body>
 
 </html>
