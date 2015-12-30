@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Maps - Directions</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        var directionsService;
+        
+        function initMap() {
+            console.log("Google Maps loaded");
+            directionsService = new google.maps.DirectionsService();
+            berechneRoute("Neustadtswall 30, 28199 Bremen", "Flughafenallee 10, 28199 Bremen");
+        }
+        
+        function berechneRoute(start, ziel) {
+            var abfrage = {
+              origin: start,
+              destination: ziel,
+              travelMode: google.maps.TravelMode.TRANSIT,
+              transitOptions: {
+                  //departureTime: new Date(Date.now()),
+                  departureTime: new Date(2015, 11, 31, 7, 45, 0),
+                  modes: [google.maps.TransitMode.TRAM, google.maps.TransitMode.BUS]
+              },
+              provideRouteAlternatives: true
+              //mode: [google.maps.TransitMode.TRAM, google.maps.TransitMode.BUS]  
+            };
+            directionsService.route(abfrage, function(ergebnis, status) {
+                if (status == google.maps.DirectionsStatus.OK) {
+                    //console.log(ergebnis);
+                    console.log("Anzahl Verbindungen: " + ergebnis.routes.length);
+                    for (var route of ergebnis.routes) {
+                        var verbindung = route.legs[0];
+                        console.log("Von: " + verbindung.start_address);
+                        console.log("Nach: " + verbindung.end_address);
+                        console.log("Abfahrt: " + verbindung.departure_time.text);
+                        console.log("Ankunft: " + verbindung.arrival_time.text);
+                        //console.log(verbindung.steps);
+                        for (var step of verbindung.steps) {
+                            console.log("travel_mode: " + step.travel_mode);
+                            console.log("instructions: " + step.instructions);
+                            console.log("distance: " + step.distance.text);
+                            console.log("duration: " + step.duration.text);
+                            if (step.travel_mode === "TRANSIT") {
+                                console.log("Abfahrt: " + step.transit.departure_stop.name);
+                                console.log("Abfahrt (Zeit): " + step.transit.departure_time.text);
+                                console.log("Ankunft: " + step.transit.arrival_stop.name);
+                                console.log("Ankunft (Zeit): " + step.transit.arrival_time.text);
+                                console.log("Linie: " + step.transit.line.short_name);
+                                /*console.log();
+                                console.log();
+                                console.log();
+                                console.log();
+                                console.log();
+                                console.log();
+                                console.log();
+                                console.log();
+                                console.log();*/
+                            }
+                            console.log(step);
+                        }
+                        console.log("----------------------------------------");
+                    }
+                }
+            });
+        }
+    </script>
+    <!-- -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzqVkh6g437nWPLg0X5hbHYPXaZlCtipg&callback=initMap">
+    </script>
+    <!-- -->
+    <!--
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+    -->
+</body>
+
+</html>
