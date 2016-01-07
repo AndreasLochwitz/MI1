@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Mobile - Dynamic loading example</title>
+  <!--
+    Mustache ist ein einfaches Template System
+    siehe auch https://github.com/janl/mustache.js
+  -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Dynamic example</h1>
+      <a href="#" id="plusButton" class="ui-btn ui-icon-plus ui-btn-right ui-btn-icon-notext ui-corner-all"></a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul id="entries" data-role="listview" data-inset="true">
+
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // Variable fuer neue IDs
+    var idCounter = 0;
+
+    // fragt die naechste (freie) ID ab
+    function getNextId() {
+      return idCounter++;
+    }
+
+    $('#plusButton').on('click', function() {
+      //alert("Klick");
+      $.get("jquery-template.html", function(data) {
+        var id = getNextId(),
+            // ID in das Template einfuegen
+            renderedPage = Mustache.render(data, { id: id });
+        // Link auf der Uebersichtsseite einfuegen
+        $("#entries").append('<li><a href="#page_' + id + '">Eintrag ' + id + '</a></li>').listview("refresh");
+        // Neue Seite dem Body hinzufuegen
+        $("body").append(renderedPage);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
