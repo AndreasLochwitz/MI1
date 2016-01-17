@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<!-- 
+			Source for river-1.mp3: http://www.soundjay.com/river-sounds-1.html
+		-->
+</head>
+<body>
+	<button id="play">Play</button>
+	<button id="stop">Stop</button>
+	<script>
+		var sound = new Howl({
+			urls : [ 'river-1.mp3' ],
+			loop : true,
+			//volume: 0.1,
+			onplay : function() {
+				console.log("play");
+			},
+			onload : function() {
+				console.log("loaded");
+			}
+		});
+		var volumeInterval = null;
+
+		$('#play').on('click', function() {
+			console.log("starte audio");
+			Howler.volume(0.01);
+			sound.play();
+			volumeInterval = setInterval(function() {
+				console.log("Volume = " + Howler.volume());
+				if (Howler.volume() >= 0.95) {
+					Howler.volume(1.0);
+					console.log("Volume maximum");
+					clearInterval(volumeInterval);
+				} else {
+					Howler.volume(Howler.volume() + 0.01);
+				}
+			}, 1000);
+		});
+		$('#stop').on('click', function() {
+			sound.stop();
+			Howler.volume(0.01);
+			clearInterval(volumeInterval);
+		});
+	</script>
+</body>
+</html>
